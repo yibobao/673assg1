@@ -1,3 +1,8 @@
+/**
+ * @author :Yibo Bao
+ * Description:This program will judge if the user input year is a leap year 
+ * or not.
+ */
 import java.util.Scanner;
 
 public class leapYear {
@@ -14,6 +19,10 @@ public class leapYear {
 			System.out.println(n+" is not a leap yea r");
 		}
 	}
+	/**
+	 * @param the year
+	 * @return if year is leap year or not.
+	 */
 	public static  boolean leapYear(int i) {
 		 if (((i % 4 == 0) && (i % 100!= 0)) || (i%400 == 0)) {
 			 return true;

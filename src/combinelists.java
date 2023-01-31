@@ -26,6 +26,10 @@ public class combinelists {
 		System.out.println(l2);
 		System.out.println(l3);
 	}
+	/**
+	 * @param: one list of integer,one list of string list
+	 * @return: combined list contains all of things in given lists.
+	 */
 	private static ArrayList<String> combine(ArrayList<Integer> l1, ArrayList<String> l2) {
 		int times = 0;
 		int i;
@@ -40,9 +44,11 @@ public class combinelists {
 			judge=2;
 		}
 		for(i =0;i<times;i++) {
+			//combine the equal size first
 			l3.add(Integer.toString(l1.get(i)));
 			l3.add(l2.get(i));
 		}
+		//in the case if they do not have equal size;
 		if (judge ==2){
 			for(int j =i;j<l1.size();j++) {
 				l3.add(Integer.toString(l1.get(j)));

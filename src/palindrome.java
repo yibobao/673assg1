@@ -1,9 +1,13 @@
+/**
+ * @author:Yibo Bao
+ * Description: judge if a string is palindrome or not.
+ */
 import java.util.Scanner;
 
 public class palindrome {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//read user input.
 		Scanner reader = new Scanner(System.in);  // Reading from System.in
 		System.out.println("Enter a word: ");
 		String n = reader.next(); // Scans the next token of the input as an int.
@@ -17,6 +21,10 @@ public class palindrome {
 		}
 	}
 
+	/**
+	 * @param input n
+	 * @return if the input string is a palindrome or not
+	 */
 	private static boolean judge(String n) {
 		// TODO Auto-generated method stub
 		int total = n.length();
@@ -24,6 +32,7 @@ public class palindrome {
 			return true;
 		}
 		if(total % 2==0) {
+			//for even and odd numbers of chars have different mid
 			int mid = total/2;
 			int compare = mid-1;
 			while(compare>=0) {

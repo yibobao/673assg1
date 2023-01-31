@@ -1,3 +1,8 @@
+/**
+ * @Author: Yibo Bao
+ * Description: This program will show the fibonacci list by given number
+ *  it will show the given number of items in fibonacci 
+ */
 import java.util.ArrayList;
 
 public class Fibonacci {
@@ -9,7 +14,10 @@ public class Fibonacci {
 		System.out.println(calculateFib(10));
 		System.out.println(calculateFib(100));
 	}
-
+	/*
+	 * @parameter:number of items
+	 * @return: lists of fibonacci
+	 */
 	private static ArrayList<Integer> calculateFib(int i) {
 		// TODO Auto-generated method stub
 		ArrayList<Integer> l1 = new ArrayList<Integer>();
