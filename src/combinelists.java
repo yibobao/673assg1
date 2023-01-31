@@ -11,16 +11,15 @@ public class combinelists {
 		l1.add("1");
 		l1.add("2");
 		l1.add("3");
-		l1.add("1");
-		l1.add("2");
+		
+
 		ArrayList<String> l2 = new ArrayList<String>();
 		l2.add("a");
 		l2.add("b");
 		l2.add("c");
-		l2.add("b");
-		l2.add("c");
-		l2.add("b");
-		l2.add("c");
+		l1.add("5");
+		l1.add("5");
+
 		ArrayList<String> l3 = combine(l1,l2);
 		System.out.println(l1);
 		System.out.println(l2);
